@@ -13,6 +13,9 @@ const nameFinder = [
     'Jessica',
     'Marc'
   ];
-  function finderName(param) {
-    // insert code
+  function finderName(array, element) {
+    if(array.includes(element)) return [true,array.indexOf(element)]
+    else return false
   }
+
+  console.log(finderName(nameFinder, "Steve"))
